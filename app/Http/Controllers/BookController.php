@@ -89,7 +89,7 @@ class BookController extends Controller
         ModelBook::where(['id'=>$id])->update([
             'title'=>$request->title,
             'description'=>$request->description,
-            'date'=>Carbon::createFromFormat('d/m/Y', $request->date )->toDateString(),
+            'date'=>$request->date,
             'id_user'=>$request->id_user
         ]);
         return redirect('books');

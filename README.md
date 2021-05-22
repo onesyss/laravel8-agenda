@@ -46,13 +46,15 @@
     DB_USERNAME=root
     DB_PASSWORD=
     ```
+- Apos isso execute o comando `php artisan key:generate` para gerar um código criptografado do APP_KEY
+
 - Fazendo isso use o comando `php artisan migrate` para gerar todas as tabelas no banco que a aplicação utilizará
 
 - Execute a aplicação com o comando:
 
     `php artisan serve`
 
-- Por padrão, ele irá executar a aplicação em `localhost:8000`, abra o navegador e digite o caminho.
+- Por padrão, ele irá executar a aplicação em `localhost:8000`, abra o navegador e digite o caminho que ficará assim `localhost:8000/books`.
 
 <!-- <h2 id="demo">Demo da aplicação</h2>
  
