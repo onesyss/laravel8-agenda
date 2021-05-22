@@ -29,7 +29,7 @@
               @endforeach
         </select><br>
         <input class="form-control" type="text" name="description" id="description" placeholder="Descrição:" value="{{$book->description?? ''}}" required><br>
-        <input class="form-control" type="text" name="date" id="date" placeholder="Data: 00/00/2000" value="{{$book->date ?? ''}}" required><br>
+        <input class="form-control" type="date" name="date" id="date" placeholder="Data: 00/00/2000" value="{{$book->date ?? ''}}" required><br>
         <input class="btn btn-primary" type="submit" value="@if(isset($book)) Editar @else Cadastrar @endif">
       </form>
   </div> 

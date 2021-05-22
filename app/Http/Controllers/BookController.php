@@ -44,7 +44,8 @@ class BookController extends Controller
         $cad=ModelBook::create([
            'title'=>$request->title,
            'description'=>$request->description,
-           'date'=>Carbon::createFromFormat('d/m/Y', $request->date)->toDateString(),
+           'date'=>$request->date,
+        //    'date'=>Carbon::createFromFormat('d/m/Y', $request->date)->toDateString(),
            'id_user'=>$request->id_user
         ]);
         if($cad){
